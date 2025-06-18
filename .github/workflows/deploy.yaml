@@ -24,7 +24,7 @@ jobs:
       - name: Checkout code (dev branch)
         uses: actions/checkout@v4
         with:
-          ref: dev
+          ref: main
 
       - name: Setup Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -50,7 +50,7 @@ jobs:
       - name: Checkout master branch
         uses: actions/checkout@v4
         with:
-          ref: master
+          ref: main
 
       - name: Setup Docker Buildx
         uses: docker/setup-buildx-action@v3
